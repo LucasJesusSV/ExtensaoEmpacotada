@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Minha Primeira Extensão",
+  "version": "1.0",
+  "description": "Extensão simples feita para o Bootcamp",
+  "permissions": [],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

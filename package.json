@@ -1,0 +1,15 @@
+{
+  "name": "extensao-motivacional-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:zip": "mkdir -p dist && zip -r dist/extension.zip manifest.json popup.html popup.js style.css icons || true",
+    "test:e2e": "npx playwright test --reporter=html",
+    "test:e2e:ci": "npx playwright install --with-deps && npx playwright test --reporter=html",
+    "clean": "rm -rf node_modules dist playwright-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.37.0",
+    "typescript": "^5.0.0"
+  }
+}
